@@ -1,0 +1,96 @@
+*{
+  margin: 0;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid black;
+  border-radius: 30px;
+  padding: 20px 30px;
+}
+
+#timer{
+  font-size: 70px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 20px;
+}
+
+#buttons button{
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 5px;
+  min-width: 125px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+#start{
+  background-color: hsl(120, 100%, 40%);
+}
+#start:hover{
+  background-color: hsl(120, 100%, 30%);
+}
+
+#reset{
+  background-color: hsl(0, 100%, 50%);
+}
+#reset:hover{
+  background-color: hsl(0, 100%, 40%);
+}
+
+#stop{
+  background-color: hsl(195, 87%, 40%);
+}
+#stop:hover{
+  background-color: hsl(195, 87%, 30%);
+}
+
+/* @media only screen and (max-width: 600px){
+  body{
+    max-width: 50;
+  }
+} */
+/* Media query for devices with a max width of 600px (mostly mobile devices) */
+@media (max-width: 600px) {
+  body {
+      padding: 10px; /* Add some padding for smaller screens */
+  }
+
+  #timer {
+      font-size: 50px; /* Reduce the font size for mobile */
+      margin-bottom: 15px; /* Adjust margin for spacing */
+  }
+
+  #buttons button {
+      font-size: 18px; /* Slightly reduce button text size */
+      padding: 12px; /* Increase vertical padding for better touch targets */
+      min-width: 100%; /* Make buttons take full width for better usability */
+  }
+}
+
+/* Media query for devices with a max width of 400px (small mobile devices) */
+@media (max-width: 400px) {
+  #timer {
+      font-size: 40px; /* Further decrease the timer font size */
+  }
+
+  #buttons button {
+      font-size: 16px; /* Reduce button text size */
+      padding: 10px; /* Optional: adjust padding for small screens */
+  }
+}
